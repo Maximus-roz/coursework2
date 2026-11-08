@@ -57,3 +57,9 @@ class CSVStorage(AbstractFileStorage):
         if removed:
             self._write(kept)
         return removed
+
+    def get_all(self) -> list:
+        return self._read()
+
+    def clear(self) -> None:
+        self._write([])
