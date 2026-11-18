@@ -1,8 +1,8 @@
 import csv
 from pathlib import Path
 
-from Abstract_file_storage import AbstractFileStorage
-from JSON_storage import JSONStorage
+from abstract_file_storage import AbstractFileStorage
+from json_storage import JSONStorage
 
 
 class CSVStorage(AbstractFileStorage):
